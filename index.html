@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Table</title>
+</head>
+<body>
+    <body id="body">
+        <h1>Here is the table</h1>
+        <button id="changeProfile" onClick="reveal()">Edit table</button>
+      </body>
+      
+      <div class="create hide">
+        <h3>Create Row</h3>
+      <input id="id" type="number" placeholder="id">
+      <input id="name" type="text" placeholder="name">
+      <input id="company" type="text" placeholder="company">
+      <button id="add" onClick="addrow()">Add</button>
+      </div>
+      
+      <div class="edit hide">
+        <h3>Edit Row:</h3>
+      <input id="remidRow" type="number" placeholder="cell number">
+      <input id="edit"  placeholder="edit" type="tetx">
+      <button onClick="edit()">Edit</button>
+        <p>
+          how to calculate cell number: Row Number * column number
+          eg. row2,column 2 = 2*2 = cell4 = Adam White.
+          <em>Special case: first cell is 0;</em>
+        </p>
+      </div>
+      
+      <div class="delete hide">
+        <h3>Delete Row</h3>
+        <input id="remid" type="number" placeholder="row number">
+        <button id="remove" onClick="Geeks()">Delete</button>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+</html>
